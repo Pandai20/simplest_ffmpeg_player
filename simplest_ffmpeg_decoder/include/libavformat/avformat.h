@@ -1132,7 +1132,7 @@ typedef struct AVFormatInternal AVFormatInternal;
  */
 typedef struct AVFormatContext {
     /**
-     * A class for logging and @ref avoptions. Set by avformat_alloc_context().
+     *  A class for logging and @ref avoptions.Set by avformat_alloc_context().
      * Exports (de)muxer private options if they exist.
      */
     const AVClass *av_class;
@@ -1707,8 +1707,7 @@ AVOutputFormat *av_oformat_next(AVOutputFormat *f);
 
 /**
  * Allocate an AVFormatContext.
- * avformat_free_context() can be used to free the context and everything
- * allocated by the framework within it.
+ * avformat_free_context() can be used to free the context and everything allocated by the framework within it.
  */
 AVFormatContext *avformat_alloc_context(void);
 
@@ -1855,7 +1854,7 @@ int av_probe_input_buffer(AVIOContext *pb, AVInputFormat **fmt,
 /**
  * Open an input stream and read the header. The codecs are not opened.
  * The stream must be closed with avformat_close_input().
- *
+ *-
  * @param ps Pointer to user-supplied AVFormatContext (allocated by avformat_alloc_context).
  *           May be a pointer to NULL, in which case an AVFormatContext is allocated by this
  *           function and written into ps.

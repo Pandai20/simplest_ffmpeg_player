@@ -80,6 +80,7 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 	videoindex=-1;
+	//pFormatCtx包含视频文件的相关信息,编码格式什么的
 	for(i=0; i<pFormatCtx->nb_streams; i++) 
 		if(pFormatCtx->streams[i]->codec->codec_type==AVMEDIA_TYPE_VIDEO){
 			videoindex=i;
